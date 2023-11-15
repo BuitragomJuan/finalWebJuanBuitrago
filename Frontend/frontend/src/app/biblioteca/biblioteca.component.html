@@ -1,0 +1,15 @@
+<div>
+  <h2>Biblioteca Form</h2>
+  <form (submit)="nuevaBiblioteca()">
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id="Nombre" [(ngModel)]="biblioteca.Nombre" name="Nombre" required>
+    
+    <label for="Direccion">Direccion:</label>
+    <input type="text" id="Direccion" [(ngModel)]="biblioteca.Direccion" name="Direccion" required>
+
+    <label for="Ciudad">Ciudad:</label>
+    <input type="text" id="Ciudad" [(ngModel)]="biblioteca.Ciudad" name="Ciudad" required>
+
+    <button type="submit">Agregar Biblioteca</button>
+  </form>
+</div>

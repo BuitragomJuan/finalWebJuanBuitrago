@@ -1,0 +1,15 @@
+<div>
+  <h2>Libro Form</h2>
+  <form (submit)="nuevoLibro()">
+    <label for="Nombre">Titulo:</label>
+    <input type="text" id="Nombre" [(ngModel)]="Libro.Nombre" name="Nombre" required>
+    
+    <label for="autor">Autor:</label>
+    <input type="text" id="Autor" [(ngModel)]="Libro.Autor" name="Autor" required>
+
+    <label for="BibliotecaId">Autor:</label>
+    <input type="Integer" id="BibliotecaId" [(ngModel)]="Libro.BibliotecaId" name="BibliotecaId" required>
+
+    <button type="submit">Agregar Libro</button>
+  </form>
+</div>
